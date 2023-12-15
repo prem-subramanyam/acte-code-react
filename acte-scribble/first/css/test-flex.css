@@ -1,0 +1,27 @@
+/* .my-flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+    flex-direction: row-reverse;
+  }
+  
+  .my-flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  } */
+
+  .my-flex-container{
+    border: solid 1px;
+    border-color: red;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+  }
+
+  .my-flex-container>div{
+    border: solid 1px;
+    border-color: green;
+    padding: 10px;
+    margin: 10px;
+  }
