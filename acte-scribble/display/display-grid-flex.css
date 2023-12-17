@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.mygrid {
+  /* width: 100px;
+    height: 100px; */
+  background-color: pink;
+  display: grid;
+}
+
+.mygrid > div,
+img {
+  width: 50px;
+  height: 100px;
+  background-color: blue;
+  padding: 20px;
+  margin: 20px;
+}
+
+.mygrid > img {
+  background-color: pink;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.myflex {
+  /* width: 100px;
+      height: 100px; */
+  background-color: pink;
+  display: flex;
+  border: 2px solid black;
+}
+
+.myflex > div,
+img {
+  width: 50px;
+  height: 100px;
+  background-color: blue;
+  padding: 20px;
+  margin: 20px;
+}
+
+.myflex > img {
+  background-color: pink;
+  cursor: pointer;
+  object-fit: cover;
+}

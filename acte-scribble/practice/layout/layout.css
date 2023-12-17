@@ -1,0 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.my-layout{
+    display: grid;
+    border: 2px solid black;
+    background-color: pink;
+}
