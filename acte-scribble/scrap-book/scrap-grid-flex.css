@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mygrid {
+    border: 2px solid blue;
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+}
+
+.mygrid > div, img {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-height: 75px) and (max-height: 100px) {
+    .mygrid {
+        background-color: brown;
+        height: 100%;
+    }
+}
