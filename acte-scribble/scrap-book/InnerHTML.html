@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        This is first line of div
+        <p id="test">This is test</p>
+        <input type="button" value="Test" onclick="test('ಕನ್ನಡ')" />
+    </div>
+</body>
+</html>
+<script>
+    function test(arg1) {
+        console.log('Test ' + arg1);
+        document.getElementById("test").innerHTML= arg1 + " for now";
+    }
+</script>
