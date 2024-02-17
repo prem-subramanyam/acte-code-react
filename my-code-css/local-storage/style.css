@@ -1,0 +1,63 @@
+#result {
+  display: grid;
+}
+
+.eachDivClass {
+  display: flex;
+  /* text-align: center; */
+  /* width: 95%; */
+}
+
+.eachDivClass > div {
+  display: flex;
+  width: 95%;
+  padding: 5px;
+  margin: 5px;
+  /* justify-content: space-between; */
+  /* text-align: center; */
+}
+
+.test-right {
+  margin-left: auto;
+}
+
+.test-right:hover {
+  cursor: pointer;
+}
+
+.eachDivClass:hover {
+  opacity: 0.7;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+}
+
+.lightpink {
+  background-color: lightpink;
+}
+
+.darkpink {
+  background-color: red;
+}
+
+.eachDivWithoutColor {
+  display: flex;
+}
+
+.eachDivWithoutColor > div {
+  display: flex;
+  width: 95%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.eachDivWithoutColor:hover {
+  background-color: lightgrey;
+}
+
+.heading {
+  background-color: lightgrey;
+  border: 1px solid black;
+  font-weight: bold;
+}

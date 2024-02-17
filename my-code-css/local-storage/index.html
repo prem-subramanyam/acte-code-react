@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Local Storage</title>
+  </head>
+  <body onload="generateRows()">
+    <div>
+      <select name="ToDo" id="todo-select">
+        <option value="blank"></option>
+        <option value="Critical">Critical</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Easy">Easy</option>
+      </select>
+      <span>
+        <input type="text" id="todo-text" />
+        <button onclick="addToDo()">Add</button>
+        <button onclick="clearAll()">Clear All</button>
+        <!-- <button onclick="generateRows()">Test</button> -->
+        <input
+          type="checkbox"
+          name="enableColors"
+          id="enableColors"
+          onchange="generateRows()"
+        />Enable Colors
+      </span>
+    </div>
+    <div id="result"></div>
+  </body>
+</html>

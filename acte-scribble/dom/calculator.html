@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="number1" type="number" placeholder="Enter Number 1" />
+    <input id="number2" type="number" placeholder="Enter Number 2" />
+    <br /><br />
+    <div>
+      <button onclick="numberOperation('+', 'Sum is ')">Add</button>
+      <button onclick="numberOperation('-', 'Difference is ')">Subtract</button>
+      <button onclick="numberOperation('*', 'Product is ')">Multiply</button>
+      <button onclick="numberOperation('/', 'Division result is ')">
+        Divide
+      </button>
+    </div>
+    <p class="result"></p>
+  </body>
+</html>
+<script>
+  function numberOperation(oper, description) {
+    let first = +document.getElementById("number1").value;
+    let second = document.getElementById("number2").value;
+    let resultValue = eval(first + oper + second);
+    console.log(description + resultValue);
+    console.log(typeof first);
+    document.querySelector(".result").innerText = description + resultValue;
+  }
+</script>

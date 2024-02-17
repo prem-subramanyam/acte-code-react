@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="write name" id="input1" />
+    <input type="number" placeholder="add number" id="input2" />
+    <button onclick="submit()">Submit</button>
+    <button onclick="myfunction()">My Test</button>
+    <p id="name"></p>
+    <p id="number"></p>
+    <p class="myclass"></p>
+    <h1 id="hello">Hello</h1>
+    <button onclick="updateHello()">Update</button>
+  </body>
+</html>
+<script>
+  function submit() {
+    let name = document.getElementById("input1").value;
+    let number = document.getElementById("input2").value;
+    console.log(name + number);
+    document.getElementById("name").innerText = name;
+    document.getElementById("number").innerText = number;
+  }
+
+  function myfunction() {
+    console.log("Test");
+    let name = document.getElementById("input1").value;
+    document.querySelector(".myclass").innerText = name;
+  }
+
+  function updateHello() {
+    document.getElementById("hello").innerText = "Hello Updated";
+  }
+</script>
