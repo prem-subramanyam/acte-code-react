@@ -24,16 +24,27 @@
 // f=10
 
 // let sum = 2*(a**b) + 5*(c+e) + 10*(d*f);
-// console.log(sum); 
+// console.log(sum);
 
 // let num = 1234567890123456789012n;
 // let result = num * BigInt(1000);
 // console.log(result + " " + typeof(result));
 
-let nums = [1,2,3,4,5,6,7,8,9,10];
+// let nums = [1,2,3,4,5,6,7,8,9,10];
 
-odd = nums.filter(eachNum => {
-    return (eachNum % 2) != 0;
-});
+// odd = nums.filter(eachNum => {
+//     return (eachNum % 2) != 0;
+// });
 
-console.log(odd);
+// console.log(odd);
+
+function hobbies(name, period) {
+  this.name = name;
+  this.period = period;
+}
+
+let kid = new hobbies("cricket", "all");
+let teen = new hobbies("piano", "teen");
+
+console.log(kid);
+console.log(teen);
